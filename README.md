@@ -37,3 +37,18 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+ANSWER TO QUESTION:  
+If anything is wrong with this reasoning, please let me know  
+
+I believe that the average-case run-time complexity for insertion sort is $\Theta(n^2)$  
+My reason for believing this is due to the fact that there are two loops included in the  
+insertion sort, one of which will *always* repeat n number of times. Now, assuming that  
+the sorted array isn't the best case (that being an already sorted list) that means that  
+the algorithm will have to sort at least some elements in the array. Let's assume that  
+it had to sort through half of the elements. In this case, we'd get n * (n/2). However,  
+because we don't care about the 2 due to it being a constant, we get rid of it and end up  
+with $\Theta(n^2)$  
+Although we used n/2 for the example, this will apply to pretty much any type of list that has  
+some elements that need sorting.
+
